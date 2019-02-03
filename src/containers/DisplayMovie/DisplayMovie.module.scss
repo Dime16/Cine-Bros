@@ -1,0 +1,346 @@
+.Bg {
+    width: 100%;
+    padding-top: 8vh;
+    background-color: #001429;
+
+    @media screen and (max-width: 1100px) {
+        padding-top: 16vh;
+    }
+}
+
+.Movie {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 0;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 720px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    & h2 {
+        font-size: 30px;
+
+        @media screen and (max-width: 900px) {
+            font-size: 26px;
+        }
+    }
+    & h3 {
+        font-size: 26px;
+        @media screen and (max-width: 900px) {
+            font-size: 24px;
+        }
+
+        @media screen and (max-width: 500px) {
+            font-size: 22px;
+        }
+    }
+    & h4 {
+        font-size: 20px;
+        @media screen and (max-width: 900px) {
+            font-size: 18px;
+        }
+    }
+    & p {
+        font-size: 16px;
+        @media screen and (max-width: 900px) {
+            font-size: 14px;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        justify-content: space-evenly;
+    }
+    
+}
+.Name {
+    color: #fff;
+    line-height: 1;
+}
+.Name h2 {
+    margin: 0;
+}
+
+.Left {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (max-width: 1400px) {
+        flex: 0 0 35%;
+    }
+
+    @media screen and (max-width: 1000px) {
+        flex: 0 0 30%;
+    }
+}
+
+.Image {
+    height: 45vh;
+
+    @media screen and (max-width: 900px) {
+        height: 40vh;
+    }
+
+    @media screen and (max-width: 720px) {
+        width: 70%;
+        height: auto;
+    }
+
+}
+
+.Right {
+    flex: 0 0 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    @media screen and (max-width: 1100px) {
+        flex: 0 0 60%;
+    }
+
+    @media screen and (max-width: 720px) {
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        padding-top: 20px;
+        border-top: 1px solid #f5de50;
+        border-bottom: 1px solid #f5de50;
+    }
+}
+
+.Flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.IconBox  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 90%;
+
+    @media screen and (max-width: 1200px) {
+        flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 550px) {
+        margin: 5px 0;
+    }
+}
+
+.Progress {
+    flex: 0 0 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    @media screen and (max-width: 1400px) {
+        flex: 0 0 30%;
+    }
+
+    @media screen and (max-width: 1200px) {
+        flex: 0 0 33%;
+    }
+
+    @media screen and (max-width: 900px) {
+        flex: 0 0 36%;
+    }
+
+    @media screen and (max-width: 720px) {
+        flex: 0 0 30%;
+    }
+}
+
+.ProgressText {
+    font-weight: 700;
+    padding: 10px;
+    white-space: nowrap;
+    font-size: 24px;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 800px) {
+        font-size: 16px;
+    }
+}
+
+.Icons {
+    flex: 0 0 20%;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 0;
+
+    &__two {
+        width: 50%;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        margin: 10px 0;
+
+        @media screen and (max-width: 1000px) {
+            flex: 0 0 50%;
+        }
+
+        @media screen and (max-width: 1000px) {
+            flex: 0 0 50%;
+        }
+
+        @media screen and (max-width: 550px) {
+            margin: 5px 0;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        flex-wrap: 0 0 40%;
+    }
+
+    @media screen and (max-width: 550px) {
+        margin: 0;
+    }
+}
+
+.tagline {
+    font-style: italic;
+    color: #f5de50;
+    font-size: 22px;
+    transform: translateX(-50px);
+    text-shadow: 10px 10px 5px #001429;
+
+    @media screen and (max-width: 750px) {
+        transform: translateX(0px);
+    }
+    
+}
+
+.Icon {
+    border: 2px solid #fff;
+    text-align: center;
+    width: 1.4em;
+    line-height: 1.6em;
+    font-size: 2.5em;
+    border-radius: 0.8em;
+    padding: 10px;
+    margin-right: 10px;
+
+    &__imdb {
+        text-align: center;
+        width: 1.4em;
+        line-height: 1.6em;
+        font-size: 3em;
+        margin-right: 10px;  
+        color: #f5de50;
+    }
+}
+
+.Overview {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: .3px;
+    margin-top: 10px;
+    line-height: 1.3;
+}
+.Overview h3, p {
+    line-height: 1.3;
+    padding-top: 5px;
+    margin: 0;
+}
+
+.Trailer {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+
+    & span {
+        @media screen and (max-width: 800px) {
+            font-size: 14px;
+        }
+    }
+    & svg {
+        @media screen and (max-width: 800px) {
+            font-size: 35px;
+        }
+    }
+}
+
+.Worker {
+    color: #fff;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    flex: 0 0 30%;
+    white-space: nowrap;
+    padding: 10px;
+
+    @media screen and (max-width: 1300px) {
+       flex: 0 0 27%;
+    }
+
+    @media screen and (max-width: 1200px) {
+        flex: 0 0 25%;
+    }
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+
+}
+.Worker h4{
+    padding-bottom: 2px;
+    margin: 0;
+}
+
+.Worker p {
+    padding: 0;
+    margin: 0;
+}
+
+.WorkerBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.time {
+    white-space: nowrap;
+}
+
+.homepage {
+    text-decoration: none;
+    font-size: 22px;
+    padding-top: 10px;
+    color: #ddd;
+
+    &:visited {
+        // color: #f5de50;
+      }
+      &:hover {
+        color: #f5de50;   
+      }
+      &:active {
+        // color:#f5de50;
+      }
+
+    &__icon {
+        color: #f5de50;
+    }
+}

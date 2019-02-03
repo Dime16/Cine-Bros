@@ -1,0 +1,15 @@
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #001429;
+}
+
+.container {
+    padding-top: 12vh;
+    background-color: #001429;
+
+    @media screen and (max-width: 1100px) {
+       padding-top: 18vh;
+    }
+}

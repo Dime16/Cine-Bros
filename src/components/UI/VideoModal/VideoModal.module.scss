@@ -1,0 +1,42 @@
+ .Modal {
+    position: fixed;
+    z-index: 500;
+    background-color: #000;
+    width: 60%;
+    height: 50vh;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+
+    @media screen and (max-width: 800px) {
+        width: 90%;
+    }
+}
+
+.Frame {
+    width: 100%;
+    height: 50vh;
+    padding: 30px;
+}
+
+.Button {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #FFD300;
+    border: 1px solid #f0c600;
+    border-radius: .2em;
+    color: #000000;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.75em 1.5em;
+    text-shadow: 1px 1px 1px #fff;
+    transition: all 0.55s;
+
+    &:hover {
+        transform: scale(0.90);
+      }
+}

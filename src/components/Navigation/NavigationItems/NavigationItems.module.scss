@@ -1,0 +1,136 @@
+.Navigation {
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient( rgb(0,0,0), rgba(75, 71, 71, 0.3)) ;
+    z-index: 1000;
+    overflow: hidden;
+    font-size: 16px;
+
+    @media screen and (max-width: 1100px) {
+        height: 16vh;
+    }
+
+    @media screen and (max-width: 600px) {
+        margin: 0;
+    }
+}
+
+.Inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+
+    & ul {
+        margin: 0;
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 80%;
+    }
+    @media screen and (max-width: 1100px) {
+        flex-wrap: wrap;
+        height: 16vh;
+    }
+
+    @media screen and (max-width: 700px) {
+        width: 95%;
+    }
+
+    @media screen and (max-width: 600px) {
+        justify-content: center;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 400px) {
+        height: auto;
+     
+    }
+
+}
+
+.List {
+    list-style: none;
+    display: flex;
+
+    @media screen and (max-width: 500px) {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.Item {
+    padding: 10px;
+
+    @media screen and (max-width: 400px) {
+        padding: 5px;
+    }
+}
+
+
+
+.ListLink {
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+    padding: 10px;
+
+    @media screen and (max-width: 600px) {
+        margin: 0
+    }
+}
+
+
+.btn {
+    appearance: none;
+    background-color: transparent;
+    border-radius: 0.5em;
+    color: #ddd;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+    @media screen and (max-width: 600px) {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 14px;
+    }
+}
+
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  outline: 0;
+}
+.first {
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    
+}
+.first:hover {
+    box-shadow: 0 0 40px 40px #950740 inset;
+}
+
+.Search {
+    display: flex;
+
+    @media screen and (max-width: 1100px) {
+        margin: auto;
+    }
+
+    @media screen and (max-width: 600px) {
+        margin: 0;
+    }
+
+}
+

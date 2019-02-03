@@ -1,0 +1,28 @@
+.Box {
+    display: flex;
+    align-items: center;
+    color: #ddd;
+    text-decoration: none
+}
+.Logo {
+    width: 50px;
+
+    @media screen and (max-width: 400px) {
+        display: none;
+    }
+}
+
+.text {
+    margin: 0;
+     white-space: nowrap;
+     text-transform: uppercase;
+     padding: 10px;
+
+     @media screen and (max-width: 600px) {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 550px) {
+        display: none;
+    }
+}

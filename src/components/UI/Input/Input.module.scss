@@ -1,0 +1,22 @@
+.Input {
+    border: none;
+    padding: 7px 20px;
+    font-weight: 500;
+    font-family: inherit;
+    color: #001429;
+    font-size: 20px;
+    background-color: rgba($color: #fff, $alpha: .7);
+    border-radius: 6px;
+
+    &:focus {
+        outline: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 14px;
+    }
+}
